@@ -1,5 +1,5 @@
 {
-  "name": "count-lines",
+  "name": "use-count-lines",
   "version": "1.0.0-alpha.0",
   "description": "An util to count the lines of a dom node",
   "main": "dist/index.cjs.js",
@@ -19,9 +19,9 @@
   "author": "Guilherme Samuel (guilhermefront)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/guilhermefront/count-lines/issues"
+    "url": "https://github.com/guilhermefront/use-count-lines/issues"
   },
-  "homepage": "https://github.com/guilhermefront/count-lines#readme",
+  "homepage": "https://github.com/guilhermefront/use-count-lines#readme",
   "devDependencies": {
     "rollup": "^2.75.6"
   },
