@@ -1,0 +1,36 @@
+{
+  "name": "use-count-lines",
+  "version": "2.0.0-alpha.0",
+  "description": "A hook to count the lines of an element",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@storybook/react": "^6.5.7",
+    "@storybook/testing-library": "0.0.11",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-masonry-css": "^1.0.16",
+    "rollup": "^2.75.6",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "typescript": "^4.7.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "gitHead": "ca3e92506e0349e2e87e2b32ec83a60085202a9c",
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "dependencies": {
+    "@tvanc/lineclamp": "^0.2.0"
+  },
+  "types": "dist/index.d.ts"
+}
