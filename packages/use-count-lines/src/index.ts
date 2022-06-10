@@ -72,7 +72,7 @@ export const useCountLines = (customRef = null) => {
   let ref;
 
   if (customRef) {
-    ref = customRef.ref;
+    ref = customRef;
   } else {
     ref = defaultRef;
   }
