@@ -1,6 +1,6 @@
 {
   "name": "test-count-lines",
-  "version": "0.1.0",
+  "version": "2.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -10,7 +10,7 @@
     "react-dom": "^18.1.0",
     "react-masonry-css": "^1.0.16",
     "react-scripts": "5.0.1",
-    "use-count-lines": "^2.0.0",
+    "use-count-lines": "^2.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
