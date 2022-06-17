@@ -111,12 +111,6 @@
     /* Skip type checking all .d.ts files. */
     "jsx": "react"
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "src/**/*.test.tsx"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "src/**/*.test.tsx"]
 }

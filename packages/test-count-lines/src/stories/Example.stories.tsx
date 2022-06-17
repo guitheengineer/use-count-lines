@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { useCountLines } from '../index';
+import { useCountLines } from 'use-count-lines';
 import Masonry from 'react-masonry-css';
 import './example.css';
 
@@ -11,6 +11,9 @@ const Text = forwardRef<HTMLTextAreaElement, { children: string }>(
 export default {
   title: 'Example',
   component: Text,
+  parameters: {
+    controls: { hideNoControlsWarning: true },
+  },
 } as ComponentMeta<typeof Text>;
 
 const texts = [
@@ -37,7 +40,7 @@ const Card = ({ children }) => {
         padding: 24,
       }}
     >
-      <p style={{ marginTop: 0, color: '#3f506bd6' }} ref={ref}>
+      <p style={{ marginTop: 0, color: '#030303d3' }} ref={ref}>
         {children}
       </p>
       <div>

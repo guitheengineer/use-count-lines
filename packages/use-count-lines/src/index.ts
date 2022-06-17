@@ -1,5 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
+interface LineInfo {
+  lines: number;
+  textHeight: number;
+  naturalHeightWithOneLine: number;
+  firstLineHeight: number;
+  additionalLineHeight: number;
+}
+
 const defaultLineInfo = {
   lines: null,
   textHeight: null,
@@ -61,7 +69,7 @@ const calculateTextMetrics = (element) => {
 };
 
 export const useCountLines = (customRef = null) => {
-  const [lineInfo, setLineInfo] = useState(defaultLineInfo);
+  const [lineInfo, setLineInfo] = useState<LineInfo>(defaultLineInfo);
 
   const handleLineInfo = useCallback((node) => {
     const info = calculateTextMetrics(node);

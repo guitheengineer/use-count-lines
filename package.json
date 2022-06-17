@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^5.1.4"
+  },
+  "scripts": {
+    "sb": "cd ./packages/test-count-lines && npm run storybook",
+    "build": "cd ./packages/use-count-lines && npm run build",
+    "build-storybook": "cd ./packages/test-count-lines && npm run build-storybook",
+    "chromatic": "npx chromatic --project-token=8c35f9f752db"
+  }
+}
