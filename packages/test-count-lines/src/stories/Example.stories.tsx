@@ -1,20 +1,14 @@
-import React, { forwardRef } from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import React from 'react';
 import { useCountLines } from 'use-count-lines';
 import Masonry from 'react-masonry-css';
 import './example.css';
 
-const Text = forwardRef<HTMLTextAreaElement, { children: string }>(
-  ({ children }, ref) => <textarea ref={ref}>{children}</textarea>
-);
-
 export default {
   title: 'Example',
-  component: Text,
   parameters: {
     controls: { hideNoControlsWarning: true },
   },
-} as ComponentMeta<typeof Text>;
+};
 
 const texts = [
   'Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead. Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens.',
@@ -62,17 +56,13 @@ const Card = ({ children }) => {
   );
 };
 
-const Template: ComponentStory<typeof Text> = (args) => {
-  return (
-    <Masonry
-      breakpointCols={{ default: 3, 575: 1, 1200: 2, 1600: 4 }}
-      className="masonry"
-    >
-      {texts.map((text) => (
-        <Card key={text}>{text}</Card>
-      ))}
-    </Masonry>
-  );
-};
-
-export const example = Template.bind({});
+export const example = () => (
+  <Masonry
+    breakpointCols={{ default: 3, 575: 1, 1200: 2, 1600: 4 }}
+    className="masonry"
+  >
+    {texts.map((text) => (
+      <Card key={text}>{text}</Card>
+    ))}
+  </Masonry>
+);
