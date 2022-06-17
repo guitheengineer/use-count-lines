@@ -21,7 +21,7 @@
   "files": [
     "dist"
   ],
-  "gitHead": "710e67e2c731e4085f2cff15ad25dfa61811fb0d",
+  "gitHead": "b3850bcf8a5c21fc088208ac9c65f4b1a70a62f3",
   "peerDependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
