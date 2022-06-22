@@ -1,6 +1,6 @@
 {
   "name": "use-count-lines",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A hook to count the lines of an element",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -26,6 +26,5 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
-  "dependencies": {},
   "types": "dist/index.d.ts"
 }
